@@ -242,8 +242,8 @@ button{font-family:'Oswald',sans-serif;cursor:pointer;border:none;border-radius:
     <select id="sel-bestof">
       <option value="0">No limit</option>
       <option value="3">best of 3</option>
-      <option value="5">best of 5</option>
-      <option value="7" selected>best of 7</option>
+      <option value="5" selected>best of 5</option>
+      <option value="7">best of 7</option>
       <option value="9">best of 9</option>
     </select>
   </div>
@@ -572,7 +572,7 @@ let scores={1:0,2:0,D:0},selectedTeams=[0,1];
 let gameMode='hvh', difficulty='easy', cpuThinking=false;
 let nextStarter=1, gamesPlayed=0, isOT=false;
 let soundMuted=false;
-let bestOf=7; // wins needed = ceil(bestOf/2)
+let bestOf=5; // wins needed = ceil(bestOf/2)
 
 const selSize=document.getElementById('sel-size');
 const selWin=document.getElementById('sel-win');
@@ -960,7 +960,7 @@ startGame();
     <a href="https://ebw-eishockey.de/" target="_blank" style="color:#f5c518;text-decoration:none;font-family:'Oswald',sans-serif;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='.85'">🏒 ebw-eishockey.de</a>
   </div>
   <div>TIC-TAC-TOE BW Liga · Playoff Finals 2026 Special Edition</div>
-  <div>Version v01.16 · March 2026</div>
+  <div>Version v01.17 · March 2026</div>
   <div style="margin-top:4px;color:#1e3050;">Made by MAKO+CLAUDE=VL for all hockey fans 🏒</div>
 </div>
 
